@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace BrokerChooser\InertiaReactComponentsInBlade\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class InertiaReactComponentsInBladeCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'inertia-react-components-in-blade';
 
     public $description = 'My command';
 

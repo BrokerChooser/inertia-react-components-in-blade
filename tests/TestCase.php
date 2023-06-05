@@ -2,9 +2,9 @@
 
 namespace BrokerChooser\InertiaReactComponentsInBlade\Tests;
 
+use BrokerChooser\InertiaReactComponentsInBlade\InertiaReactComponentsInBladeServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use BrokerChooser\InertiaReactComponentsInBlade\InertiaReactComponentsInBladeServiceProvider;
 
 class TestCase extends Orchestra
 {

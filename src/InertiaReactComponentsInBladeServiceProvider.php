@@ -8,6 +8,7 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 class InertiaReactComponentsInBladeServiceProvider extends PackageServiceProvider
 {
     public const PACKAGE_NAME = 'inertia-react-components-in-blade';
+
     public const NAMESPACE = self::PACKAGE_NAME;
 
     public function configurePackage(Package $package): void

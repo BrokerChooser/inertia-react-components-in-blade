@@ -1,19 +1,13 @@
-# This is my package inertia-react-components-in-blade
+# Render React components in blade (with SSR)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/brokerchooser/inertia-react-components-in-blade.svg?style=flat-square)](https://packagist.org/packages/brokerchooser/inertia-react-components-in-blade)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/brokerchooser/inertia-react-components-in-blade/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/brokerchooser/inertia-react-components-in-blade/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/brokerchooser/inertia-react-components-in-blade/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/brokerchooser/inertia-react-components-in-blade/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/brokerchooser/inertia-react-components-in-blade.svg?style=flat-square)](https://packagist.org/packages/brokerchooser/inertia-react-components-in-blade)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+With this package, you can render your React component from within your blade templates/components.
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/inertia-react-components-in-blade.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/inertia-react-components-in-blade)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+You can even use server side rendering (SSR) if you want to.
 
 ## Installation
 
@@ -23,38 +17,24 @@ You can install the package via composer:
 composer require brokerchooser/inertia-react-components-in-blade
 ```
 
-You can publish and run the migrations with:
+You can then publish the component map template:
 
 ```bash
-php artisan vendor:publish --tag="inertia-react-components-in-blade-migrations"
-php artisan migrate
+php artisan vendor:publish --tag=component-map
 ```
 
-You can publish the config file with:
+You can also publish the ExampleComponent:
 
 ```bash
-php artisan vendor:publish --tag="inertia-react-components-in-blade-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="inertia-react-components-in-blade-views"
+php artisan vendor:publish --tag=example
 ```
 
 ## Usage
 
-```php
-$inertiaReactComponentsInBlade = new BrokerChooser\InertiaReactComponentsInBlade();
-echo $inertiaReactComponentsInBlade->echoPhrase('Hello, BrokerChooser!');
-```
+To use the package within your project, you first need to set up Inertia with Server Side Rendering (SSR).
+
+Then you can update your files to use the package, like this:
+[https://github.com/BrokerChooser/inertia-react-components-in-blade-example](https://github.com/BrokerChooser/inertia-react-components-in-blade-example)
 
 ## Testing
 
